@@ -1,0 +1,160 @@
+:root {
+    --blanco: #FFF;
+    --negro: #000;
+    --moradoClaro: #6834a6;
+    --morado: #5a2fa0;
+    --espacio: 5rem;
+    --fuente: "Poppins", sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-family: var(--fuente);
+}
+
+h1, h2, h3 {
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/*Menu y seccion hero*/
+
+.header {
+    background-image: url(./../img/header_bg.svg);
+    background-size: 10rem;
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: var(--espacio) 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__logo {
+    width: 15rem;
+    margin: 0 auto 3rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__element {
+    color: #6834a6;
+}
+
+.hero-info__h1 {
+    font-size: 3rem;
+    margin: 2rem 0 5rem;
+}
+
+.hero-info__a {
+    background-color: var(--moradoClaro);
+    display: block;
+    padding: 1rem 0;
+    text-transform: capitalize;
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px){
+    .header {
+        background-size: 50rem;
+    }
+
+    .menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu__logo {
+        margin: 0;
+    }
+
+    .nav {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .nav__element {
+        color: var(--blanco);
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .hero-info {
+        text-align: left;
+    }
+    
+    .hero-info__h1 {
+        font-size: 5rem;
+        line-height: 1.2;
+        }
+
+    .hero-info__a {
+        display: inline-block;
+        padding: 1rem 3rem;
+    }
+
+    .hero__img {
+        max-width: 30rem;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .header {
+        background-size: 60rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header {
+        background-size: 110rem;
+    }
+}
