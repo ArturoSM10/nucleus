@@ -186,7 +186,8 @@ img {
     margin-top: calc(var(--espacio) * 2);
 }
 
-.comisiones__title {
+.comisiones__title,
+.testimoniales__title {
     margin: 2rem 0 5rem;
     font-size: 4.6rem;
 }
@@ -211,6 +212,44 @@ img {
     color: var(--morado);
     font-weight: 900;
     margin: 0;
+}
+
+.testimoniales {
+    background-color: var(--moradoClaro);
+    padding: var(--espacio) 0 0;
+}
+
+.testimoniales__title {
+    text-align: center;
+    color: var(--blanco);
+}
+
+.testimoniales-container__card {
+    margin-bottom: 4rem;
+}
+
+.testimoniales-container__p {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1rem;
+}
+
+.testimoniales-container__p::before {
+    content: '';
+    display: block;
+    background-image: url(./../img/comilla.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 3rem;
+    height: 3rem;
+    flex-basis: 3rem;
+}
+
+.testimoniales-container__p--morado {
+    color: var(--morado);
+    text-align: right;
+    font-weight: 700;
 }
 
 @media (min-width: 768px){
@@ -304,6 +343,16 @@ img {
         font-size: 4rem;
         text-align: right;
         flex-basis: 20rem;
+    }
+
+    .testimoniales-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    }
+
+    .testimoniales-container__card {
+        margin-bottom: 0;
     }
 }
 
