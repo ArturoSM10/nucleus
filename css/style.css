@@ -110,7 +110,9 @@ img {
 
 }
 
-.ventajas-info__card:hover {
+.ventajas-info__card:hover,
+.seguridad-contenedor__card:hover,
+.comisiones-card__card:hover {
     transform: scale(1.1);
 }
 
@@ -176,6 +178,7 @@ img {
 
 .seguridad-contenedor__card {
     font-size: 2rem;
+    transition: 0.3s transform;
 }
 
 .seguridad-contenedor__p {
@@ -199,6 +202,7 @@ img {
 
 .comisiones-card__card {
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+    transition: 0.3s transform;
 }
 
 .comisiones-card__p {
