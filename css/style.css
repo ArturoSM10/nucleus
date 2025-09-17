@@ -182,6 +182,37 @@ img {
     margin: 0;
 }
 
+.comisiones {
+    margin-top: calc(var(--espacio) * 2);
+}
+
+.comisiones__title {
+    margin: 2rem 0 5rem;
+    font-size: 4.6rem;
+}
+
+.comisiones-card__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.comisiones-card__card {
+    box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
+}
+
+.comisiones-card__p {
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+}
+
+.comisiones-card__p--morado {
+    font-size: 6rem;
+    color: var(--morado);
+    font-weight: 900;
+    margin: 0;
+}
+
 @media (min-width: 768px){
     .header {
         background-size: 50rem;
@@ -247,13 +278,42 @@ img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 5rem;
+
+    }
+
+    .comisiones__contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--espacio);
+        align-items: end;
+    }
+
+    .comisiones-card__card {
+        display: flex;
+        justify-content: space-between;
         align-items: center;
+        gap: 2rem;
+    }
+
+    .comisiones-card__title,
+    .comisiones-card__p {
+        text-align: left;
+    }
+
+    .comisiones-card__p--morado {
+        font-size: 4rem;
+        text-align: right;
+        flex-basis: 20rem;
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 998px) {
     .header {
         background-size: 60rem;
+    }
+
+    .comisiones__contenedor {
+        align-items: center;
     }
 }
 
