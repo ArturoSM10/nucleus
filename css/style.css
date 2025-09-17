@@ -209,14 +209,14 @@ img {
 
 .comisiones-card__p--morado {
     font-size: 6rem;
-    color: var(--morado);
+    color: var(--moradoClaro);
     font-weight: 900;
     margin: 0;
 }
 
 .testimoniales {
     background-color: var(--moradoClaro);
-    padding: var(--espacio) 0 0;
+    padding: var(--espacio) 0;
 }
 
 .testimoniales__title {
@@ -226,6 +226,10 @@ img {
 
 .testimoniales-container__card {
     margin-bottom: 4rem;
+}
+
+.testimoniales-container__card:last-of-type {
+    margin-bottom: 0;
 }
 
 .testimoniales-container__p {
@@ -250,6 +254,26 @@ img {
     color: var(--morado);
     text-align: right;
     font-weight: 700;
+}
+
+.footer {
+    background-color: var(--morado);
+    padding: 3rem 0;
+}
+
+.footer-menu__contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu__img {
+    width: 20rem;
+    margin-bottom: 4rem;
+}
+
+.footer-menu__a {
+    text-align: center;
 }
 
 @media (min-width: 768px){
@@ -354,6 +378,16 @@ img {
     .testimoniales-container__card {
         margin-bottom: 0;
     }
+
+    .footer-menu__contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-menu__img {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 998px) {
@@ -363,6 +397,10 @@ img {
 
     .comisiones__contenedor {
         align-items: center;
+    }
+
+    .footer-menu__menu {
+        align-items: flex-start;
     }
 }
 
